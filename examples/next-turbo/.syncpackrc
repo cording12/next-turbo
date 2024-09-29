@@ -1,0 +1,11 @@
+{
+  "dependencyTypes": ["prod", "dev"],
+  "versionGroups":
+    [
+      {
+        "label": "Use workspace protocol when developing local packages",
+        "dependencies": ["$LOCAL"],
+        "pinVersion": "workspace:*",
+      },
+    ],
+}

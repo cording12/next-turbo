@@ -1,0 +1,27 @@
+{
+  "folders": [
+    {
+      "name": "Web",
+      "path": "../apps/web",
+    },
+    {
+      "name": "Docs",
+      "path": "../apps/docs",
+    },
+    {
+      "name": "UI",
+      "path": "../packages/ui",
+    },
+    {
+      "name": "Utils",
+      "path": "../packages/utils",
+    },
+    {
+      "name": "Root",
+      "path": "../",
+    },
+  ],
+  "extensions": {
+    "recommendations": ["joshx.workspace-terminals"],
+  },
+}

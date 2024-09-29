@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Default",
+  "compilerOptions": {
+    // Based on https://github.com/vercel/turborepo/blob/ad4cf20f9d59a39196eae22102bced36bf5fd76b/packages/tsconfig/base.json
+    "composite": false,
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": false,
+    "isolatedModules": true,
+    "moduleResolution": "node",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveWatchOutput": true,
+    "skipLibCheck": true,
+    "strict": true,
+    // Based on https://github.com/vercel/turborepo/blob/ad4cf20f9d59a39196eae22102bced36bf5fd76b/packages/tsconfig/library.json
+    "lib": ["ES2019"],
+    "target": "ES2019",
+    "resolveJsonModule": true,
+    "outDir": "dist",
+    "allowJs": false,
+    // Based on https://github.com/vercel/turborepo/blob/ad4cf20f9d59a39196eae22102bced36bf5fd76b/packages/create-turbo/tsconfig.json
+    "rootDir": ".",
+    // Mine - src/commands/create/index.ts has any types that I don't want to fix
+    "noImplicitAny": false
+  },
+  "exclude": ["node_modules", "dist"]
+}

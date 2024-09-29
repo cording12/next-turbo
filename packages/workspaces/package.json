@@ -1,0 +1,46 @@
+{
+    "name": "@cnt/workspaces",
+    "version": "0.1.0",
+    "description": "",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cording12/next-turbo",
+        "directory": "packages/workspaces"
+    },
+    "bugs": {
+        "url": "https://github.com/cording12/next-turbo/issues"
+    },
+    "module": "src/index.ts",
+    "main": "src/index.ts",
+    "types": "src/index.ts",
+    "scripts": {
+        "build": "tsup",
+        "dev": "tsup --watch",
+        "test": "jest",
+        "lint": "eslint src/",
+        "check-types": "tsc --noEmit",
+        "lint:prettier": "prettier -c . --cache --ignore-path=../../.prettierignore"
+    },
+    "dependencies": {
+        "execa": "5.1.1",
+        "fast-glob": "^3.2.12",
+        "fs-extra": "^10.1.0",
+        "js-yaml": "^4.1.0",
+        "picocolors": "1.0.1",
+        "semver": "^7.3.5"
+    },
+    "devDependencies": {
+        "@cnt/utils": "workspace:*",
+        "@types/fs-extra": "^9.0.13",
+        "@types/js-yaml": "^4.0.5",
+        "@types/semver": "^7.3.9",
+        "typescript": "5.3.3"
+    },
+    "files": [
+        "dist"
+    ],
+    "publishConfig": {
+        "access": "public"
+    }
+}
