@@ -116,7 +116,7 @@ export async function create(
       },
     });
 
-    tryGitCommit("feat(create-turbo): install dependencies");
+    tryGitCommit("feat(create-next-turbo): install dependencies");
     loader.stop();
   }
 
